@@ -1,7 +1,7 @@
 :root {
     --title: #363F5F;
     --text: #969CB2;
-    --backgound: #F0F2F5;
+    --background: #F0F2F5;
 
     --green: #49AA26;
     --green-dark: #2D4A22;
@@ -10,5 +10,5 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #F0F2F5;
+    background-color: var(--background);
 }
