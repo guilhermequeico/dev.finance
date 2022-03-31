@@ -12,3 +12,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background);
 }
+
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
