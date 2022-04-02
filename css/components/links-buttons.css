@@ -1,0 +1,12 @@
+.new {
+    display: inline-block;
+
+    margin-bottom: .8rem;
+    
+    color: var(--green);
+    text-decoration: none;
+}
+
+.new:hover {
+    color: #3DD705;
+}
