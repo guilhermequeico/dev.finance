@@ -47,3 +47,9 @@
 .expense {
     color: var(--red);
 }
+
+@media (min-width: 800px) {
+    #data-table {
+        width: 100%;
+    }
+}
