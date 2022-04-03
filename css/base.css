@@ -36,3 +36,9 @@ body {
     white-space: nowrap;
     border-width: 0;
 }
+
+@media (min-width: 800px) {
+    html {
+        font-size: 87.5%;
+    }
+}
