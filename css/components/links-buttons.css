@@ -1,3 +1,14 @@
+.button {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 0.25rem;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .new {
     display: inline-block;
 
@@ -8,5 +19,29 @@
 }
 
 .new:hover {
-    color: #3DD705;
+    color: var(--light-green);
+}
+
+.cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--red);
+    border: 2px solid var(--red);
+
+    opacity: 0.6;
+}
+
+.cancel:hover {
+    opacity: 1;
+}
+
+.save {
+    color: #FFF;
+    background-color: var(--green);
+}
+
+.save:hover {
+    background-color: var(--light-green);
 }
