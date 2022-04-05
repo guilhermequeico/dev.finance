@@ -60,7 +60,7 @@
             <section id="transaction">
                 <h2 class="title sr-only">Transações</h2>
 
-                <a href="#" class="button new">+ Nova Transação</a>
+                <a href="#" class="button new" onclick="Modal.open()">+ Nova Transação</a>
 
                 <table id="data-table">
                     <thead>
@@ -137,12 +137,23 @@
                         </div>
 
                         <div class="input-group actions">
-                            <a href="#" class="button cancel">Cancelar</a>
+                            <a href="#" class="button cancel" onclick="Modal.close()">Cancelar</a>
                             <button class="button save">Salvar</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+
+        <script>
+            const Modal = {
+                open() {
+                    document.querySelector('.modal-overlay').classList.add('active')
+                },
+                close() {
+                    document.querySelector('.modal-overlay').classList.remove('active')
+                }
+            }
+        </script>
     </body>
 </html>
