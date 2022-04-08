@@ -31,7 +31,7 @@ const transactions = [
         description: 'Computador',
         amount: 540000,
         date: '15/03/2020'
-    },
+    }
 ]
 
 const Transaction = {
@@ -58,23 +58,23 @@ const DOM = {
     innerHTMLTransaction(transaction) {
         const CSSclass = transaction.amount > 0 ? "income" : "expense"
 
-        const amount = Utils.formatCurrecy(transaction.amount)
+        const amount = Utils.formatCurrency(transaction.amount)
 
         const html = `
         <td class="description">${transaction.description}</td>
         <td class="${CSSclass}">${transaction.amount}</td>
         <td class="date">${transaction.date}</td>
         <td>
-            <img src="./assets/minus.svg" alt="Remover transação">
+            <img src="./assets/minus.svg" alt="Remover transação"
         </td>
         `
-
+        
         return html
     }
 }
 
 const Utils = {
-    formatCurrecy(value) {
+    formatCurrency(value) {
         const signal = Number(value) < 0 ? "-" : ""
     }
 }
